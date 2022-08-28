@@ -5,5 +5,9 @@ Creating own rpm from python source
 
 ***- Запустим [Vagrantfile](https://github.com/ChurikovAnatolii/UNIT6_RPM/blob/main/Vagrantfile), установим rpmdevtools, rpm-build***
 
-> yum install rpmdevtools rpm-build
-> rpmdev-setuptree **- Создадим окружение для сборки пакета**
+> yum install rpmdevtools rpm-build  
+> rpmdev-setuptree **- Создадим окружение для сборки пакета**  
+
+***- Скопируем [исходники]() в папку /SOURCE, упакуем файлы в tar.gz
+
+>
