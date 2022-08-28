@@ -8,19 +8,14 @@ Creating own rpm from python source
 > yum install rpmdevtools rpm-build  
 > rpmdev-setuptree **- Создадим окружение для сборки пакета**  
 
-***- Скопируем [исходники проекта на python](https://github.com/ChurikovAnatolii/Packet-Tracer) в папку /SOURCE, упакуем файлы в tar.gz***  
+***- Скопируем [bash-script из предыдушего урока ](https://github.com/ChurikovAnatolii/Vagant_soft_RAID/blob/main/raid_add.sh) в папку /SOURCE, упакуем в tar.gz***  
 
-> wget https://github.com/ChurikovAnatolii/Packet-Tracer/archive/refs/heads/master.zip  
-> unzip master.zip  
-> tar -czvf PT.tar.gz  
+> wget https://github.com/ChurikovAnatolii/Vagant_soft_RAID/archive/refs/heads/main.zip  
+> unzip main.zip  
+> cp raid_add.sh ~/rpmbuild/SOURCES/  
+> tar -czf raid_create-0.0.1.tar.gz raid_add.sh
 
-> tar -tf PT.tar.gz **- Проверим, что все на месте**  
->> ./  
->> ./DLE_RAW_CRC.py  
->> ./main.py  
->> ./README.md  
->> ./tracer.py  
->> ./tracer.ui  
->> ./UDP_socket.py  
+***- Создадим [spec-файл]() в папке /SPECS, создадим RPM-пакет***  
 
-> 
+>
+
