@@ -8,6 +8,6 @@ Creating own rpm from python source
 > yum install rpmdevtools rpm-build  
 > rpmdev-setuptree **- Создадим окружение для сборки пакета**  
 
-***- Скопируем [исходники]() в папку /SOURCE, упакуем файлы в tar.gz
+***- Скопируем [исходники проекта на python]() в папку /SOURCE, упакуем файлы в tar.gz***  
 
 >
