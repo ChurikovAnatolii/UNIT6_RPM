@@ -19,7 +19,7 @@ Creating own rpm from python source
 
 > rpmbuild -bb raid.spec 
 
->  rpm -qi raid_create-1.0-1.el8.noarch.rpm ** - Посмотрим информацию о пакете  
+>  rpm -qi raid_create-1.0-1.el8.noarch.rpm **- Посмотрим информацию о пакете**    
 >> Name        : raid_create  
 >> Version     : 1.0  
 >> Release     : 1.el8  
