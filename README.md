@@ -15,7 +15,7 @@ Creating own rpm from python source
 > cp main raid_create-1.0  
 > tar -czf raid_create-1.0.tar.gz /raid_create-1.0
 
-***- Создадим [spec-файл]() в папке /SPECS, создадим [RPM-пакет]()***  
+***- Создадим [spec-файл](https://github.com/ChurikovAnatolii/UNIT6_RPM/blob/main/raid.spec) в папке /SPECS, создадим [RPM-пакет]()***  
 
 > rpmbuild -bb raid.spec 
 
