@@ -65,6 +65,42 @@ Creating own rpm from python source
 >> almalinux-nfv.repo               almalinux.repo                   **local.repo**  
 >> almalinux-plus.repo              almalinux-resilientstorage.repo    
 
+***- Проверим, что YUM находит наш RPM и может его установить и удалить**  
+> yum search raid_create
+>> Last metadata expiration check: 0:12:25 ago on Wed Aug 31 08:23:30 2022.  
+>> ================================= Name Exactly Matched: raid_create =================================  
+>> raid_create.noarch : bash script  
+
+> yum install -y raid_create  
+>> Last metadata expiration check: 0:13:37 ago on Wed Aug 31 08:23:30 2022.  
+>> Dependencies resolved.  
+>> =====================================================================================================  
+>> Package                   Architecture         Version                    Repository           Size  
+>> =====================================================================================================  
+>> Installing:  
+>>  raid_create               noarch               1.0-1.el8                  local               6.9 k  
+>>  
+>> Transaction Summary  
+>> =====================================================================================================  
+>> Install  1 Package  
+>>
+>> Total size: 6.9 k  
+>> Installed size: 640  
+>> Downloading Packages:  
+>> Running transaction check  
+>> Transaction check succeeded.  
+>> Running transaction test  
+>> Transaction test succeeded.  
+>> Running transaction  
+>>  Preparing        :                                                                             1/1   
+>>  Installing       : raid_create-1.0-1.el8.noarch                                                1/1   
+>>  Verifying        : raid_create-1.0-1.el8.noarch                                                1/1   
+>>
+>> Installed:  
+>>  raid_create-1.0-1.el8.noarch                                                                         
+>>
+>> Complete!  
+
 
 
 
