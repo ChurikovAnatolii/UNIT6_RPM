@@ -109,6 +109,34 @@ Last metadata expiration check: 0:12:25 ago on Wed Aug 31 08:23:30 2022.
 
  Complete!  
 ```
+> yum remove -y raid_create
+```console
+Dependencies resolved.
+=====================================================================================================
+ Package                   Architecture         Version                   Repository            Size
+=====================================================================================================
+Removing:
+ raid_create               noarch               1.0-1.el8                 @local               640  
+
+Transaction Summary
+=====================================================================================================
+Remove  1 Package
+
+Freed space: 640  
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                             1/1 
+  Erasing          : raid_create-1.0-1.el8.noarch                                                1/1 
+  Verifying        : raid_create-1.0-1.el8.noarch                                                1/1 
+
+Removed:
+  raid_create-1.0-1.el8.noarch                                                                       
+
+Complete!
+```
 
 
 
