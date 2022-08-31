@@ -30,4 +30,4 @@ install -m 0755 %{name} %{buildroot}/%{_bindir}/%{name}
 
 %changelog
 * Tue May 31 2016 Kazay <Kazay@mail.ru> - 1.0
-- First bello package
+- First package
