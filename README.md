@@ -58,8 +58,14 @@ Creating own rpm from python source
 >> -rw-r--r--. 1 root root 7040 Aug 31 08:13 raid_create-1.0-1.el8.noarch.rpm  
 >> drwxr-xr-x. 2 root root 4096 Aug 31 08:15 repodata  
 
-> nano local.repo **- Создадим [файл]() со своим репо  
-> 
+> nano local.repo **- Создадим [файл](https://github.com/ChurikovAnatolii/UNIT6_RPM/blob/main/local.repo) со своим репо**  
+
+> yum repolist **-Проверим, что он в списке репо**
+>> almalinux-ha.repo                almalinux-powertools.repo        almalinux-rt.repo  
+>> almalinux-nfv.repo               almalinux.repo                   **local.repo**  
+>> almalinux-plus.repo              almalinux-resilientstorage.repo    
+
+
 
 
 
