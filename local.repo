@@ -1,0 +1,7 @@
+[local]
+name=CentOS Linux 8 - Local
+metadata_expire=-1
+gpgcheck=0
+enabled=1
+baseurl=file:///mnt/repo
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
