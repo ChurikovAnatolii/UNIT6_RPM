@@ -36,3 +36,31 @@ Creating own rpm from python source
 >> Summary     : bash script  
 >> Description :  
 >> Create raid in via Vagrantfile in virtualbox machine  
+
+### 3. создать свой репо и разместить там свой RPM;
+реализовать это все либо в вагранте, либо развернуть у себя через nginx и дать ссылку на репо.  
+
+***- Создадим свой репо в Vagrant, скопируем в него свой rpm, проверим установку, удаление***
+
+> mkdir /mnt/repo  
+> cp ~/rpmbuild/RPMS/noarch/raid_create-1.0-1.el8.noarch.rpm /mnt/repo  
+> cd mnt/repo/  
+
+> createrepo .  
+>> Directory walk started  
+>> Directory walk done - 1 packages  
+>> Temporary output repo path: ./.repodata/  
+>> Preparing sqlite DBs  
+>> Pool started (with 5 workers)  
+>> Pool finished  
+
+>ll
+>> -rw-r--r--. 1 root root 7040 Aug 31 08:13 raid_create-1.0-1.el8.noarch.rpm  
+>> drwxr-xr-x. 2 root root 4096 Aug 31 08:15 repodata  
+
+> nano local.repo **- Создадим [файл]() со своим репо  
+> 
+
+
+
+
